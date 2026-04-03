@@ -2,7 +2,7 @@ import os
 from ultralytics import YOLO
 from pathlib import Path
 
-model_name = "runs/obb/train9/weights/best.pt"
+model_name = "runs/obb/train/weights/best.pt"
 file_name = "ultralytics/cfg/datasets/ellipse-line-obb.yaml"
 
 model = YOLO(model_name)

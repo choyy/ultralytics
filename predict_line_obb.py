@@ -4,11 +4,11 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Load a model
-model = YOLO("runs/obb/train7/weights/best.pt")  # load a custom model
+model = YOLO("runs/obb/train4/weights/best.pt")  # load a custom model
 
-img_path = "../CircleLineDetector/res/13.bmp"
+img_path = "../res/1.bmp"
 # Predict with the model
-results = model(img_path, conf=0.1, iou=0.8)  # predict on an image
+results = model(img_path, conf=0.1, iou=0.75)  # predict on an image
 
 # Access the results
 for result in results:
